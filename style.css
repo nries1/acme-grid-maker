@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid;
+}
+
+.warning {
+    color: red;
+}

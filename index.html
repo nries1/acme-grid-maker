@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link type='text/css' rel='stylesheet' href='./style.css'>
+    </head>
         <body>
             <h1>Acme Grid Maker</h1>
-            <input type='text'>
-            <input type='text'>
-            <button>Make Grid</button>
+            <input max='50' type='number' id='rows' oninput="validate(this)">
+            <div class='warning'></div>
+            <input max='50' type='number' id='cols' oninput="validate(this)">
+            <div class='warning'></div>
+            <button onclick='makeGrid(document.getElementById("rows").value, document.getElementById("cols").value)'>Make Grid</button>
             <div id='grid'>
 
             </div>
@@ -13,6 +17,6 @@
                 <span id='row'></span>
                 <span id='col'></span>
             </div>
+            <script type='text/javascript' src='./javascript.js'></script>
         </body>
-    </head>
 </html>
